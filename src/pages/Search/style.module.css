@@ -1,0 +1,10 @@
+.heading {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+}
+
+.inputWrapper {
+    margin-bottom: 32px;
+}

@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-page: #353b52;
+    --bg-card: #1a1e2e;
+    --bg-card-inner: #141720;
+    --shadow-card: 6px 6px 14px rgba(0, 0, 0, 0.5), -4px -4px 10px rgba(255, 255, 255, 0.04);
+    --shadow-inset: inset 4px 4px 8px rgba(0, 0, 0, 0.6), inset -2px -2px 6px rgba(255, 255, 255, 0.04);
+    --shadow-badge: 3px 3px 6px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.03);
+    --text-primary: #c8cfea;
+    --text-secondary: rgba(180, 190, 220, 0.5);
+    --text-accent: #8892b0;
+    --radius-card: 16px;
+    --radius-inner: 10px;
+    --radius-badge: 20px;
+}
+
+body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

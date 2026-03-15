@@ -1,0 +1,49 @@
+.card {
+    background: var(--bg-card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+}
+
+.poster {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    background: var(--bg-card-inner);
+    box-shadow: var(--shadow-inset);
+}
+
+.info {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.line,
+.lineShort,
+.lineTiny {
+    border-radius: 6px;
+    background: var(--bg-card-inner);
+    box-shadow: var(--shadow-inset);
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+.line {
+    height: 14px;
+    width: 100%;
+}
+
+.lineShort {
+    height: 12px;
+    width: 60%;
+}
+
+.lineTiny {
+    height: 12px;
+    width: 40%;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
