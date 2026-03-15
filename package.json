@@ -4,7 +4,7 @@
   "author": "Bobrov Kirill",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://BobrovKirill.github.io/kinopoisk-app",
+  "homepage": "https://bobrovkirill.github.io/vse-web-final_work",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,7 +13,7 @@
     "lint:fix": "eslint src --ext .js,.jsx --fix",
     "format": "prettier --write src",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist --no-history",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
