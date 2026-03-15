@@ -4,6 +4,7 @@
   "author": "Bobrov Kirill",
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://BobrovKirill.github.io/kinopoisk-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,6 +12,8 @@
     "lint": "eslint src --ext .js,.jsx",
     "lint:fix": "eslint src --ext .js,.jsx --fix",
     "format": "prettier --write src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -26,30 +29,31 @@
     "react-router-dom": "^7.13.1"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^5.0.1",
     "@eslint/js": "^9.39.4",
+    "@storybook/addon-a11y": "^10.2.19",
+    "@storybook/addon-docs": "^10.2.19",
+    "@storybook/addon-vitest": "^10.2.19",
     "@storybook/react": "^10.2.19",
     "@storybook/react-vite": "^10.2.19",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.0",
+    "@vitest/browser-playwright": "^4.1.0",
+    "@vitest/coverage-v8": "^4.1.0",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "eslint-plugin-storybook": "^10.2.19",
+    "gh-pages": "^6.3.0",
     "globals": "^17.4.0",
+    "playwright": "^1.58.2",
     "prettier": "^3.8.1",
+    "prop-types": "^15.8.1",
     "storybook": "^10.2.19",
     "vite": "^8.0.0",
-    "@chromatic-com/storybook": "^5.0.1",
-    "@storybook/addon-vitest": "^10.2.19",
-    "@storybook/addon-a11y": "^10.2.19",
-    "@storybook/addon-docs": "^10.2.19",
-    "prop-types": "^15.8.1",
-    "eslint-plugin-storybook": "^10.2.19",
-    "vitest": "^4.1.0",
-    "playwright": "^1.58.2",
-    "@vitest/browser-playwright": "^4.1.0",
-    "@vitest/coverage-v8": "^4.1.0"
+    "vitest": "^4.1.0"
   }
 }
