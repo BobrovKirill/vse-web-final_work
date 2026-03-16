@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import TheatersIcon from '@mui/icons-material/Theaters'
 import styles from './style.module.css'
+import { Link } from 'react-router-dom'
 
 const NAV_LINKS = [
     { to: '/', label: 'Главная', end: true },
@@ -16,10 +17,10 @@ function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.inner}>
-                <div className={styles.logo}>
+                <Link to={'/'} className={styles.logo}>
                     <TheatersIcon sx={{ fontSize: 28 }} />
                     <span className={styles.logoText}>КиноSpace</span>
-                </div>
+                </Link>
                 <nav className={styles.nav}>
                     {NAV_LINKS.map(({ to, label, end }) => (
                         <NavLink

@@ -4,27 +4,32 @@ import SearchIcon from '@mui/icons-material/Search'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import StarBorderIcon from '@mui/icons-material/StarBorder'
 import styles from './style.module.css'
+import { Link } from 'react-router-dom'
 
 const FEATURES = [
     {
         icon: <TheatersIcon sx={{ fontSize: 28 }} />,
         title: 'Каталог фильмов',
         description: 'Тысячи фильмов с рейтингами и описаниями',
+        to: '/movies',
     },
     {
         icon: <SearchIcon sx={{ fontSize: 28 }} />,
         title: 'Поиск',
         description: 'Найдите любой фильм по названию',
+        to: '/search',
     },
     {
         icon: <FavoriteBorderIcon sx={{ fontSize: 28 }} />,
         title: 'Избранное',
         description: 'Сохраняйте фильмы для быстрого доступа',
+        to: '/favorites',
     },
     {
         icon: <StarBorderIcon sx={{ fontSize: 28 }} />,
         title: 'Рейтинги',
         description: 'Оценки Кинопоиска и IMDb на каждой карточке',
+        to: '/movies',
     },
 ]
 
@@ -49,12 +54,12 @@ function Home() {
             </div>
 
             <div className={styles.features}>
-                {FEATURES.map(({ icon, title, description }) => (
-                    <div key={title} className={styles.featureCard}>
+                {FEATURES.map(({ icon, title, description, to }) => (
+                    <Link key={title} to={to} className={styles.featureCard}>
                         <div className={styles.iconBox}>{icon}</div>
                         <p className={styles.featureTitle}>{title}</p>
                         <p className={styles.featureDesc}>{description}</p>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>

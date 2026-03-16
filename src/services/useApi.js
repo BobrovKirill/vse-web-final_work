@@ -1,6 +1,4 @@
 const BASE_URL = import.meta.env.VITE_API_URL ?? 'https://api.poiskkino.dev/v1'
-console.log(import.meta.env.VITE_API_URL)
-console.log(import.meta.env.VITE_API_TOKEN)
 
 async function request(endpoint, options = {}) {
     const { method = 'GET', body, headers: extraHeaders } = options
