@@ -46,7 +46,7 @@ export const fetchMovieById = createAsyncThunk(
     }
 )
 
-const moviesSlice = createSlice({
+const useVoviesStore = createSlice({
     name: 'movies',
     initialState: {
         list: [],
@@ -110,5 +110,5 @@ const moviesSlice = createSlice({
     },
 })
 
-export const { setPage, clearMovies } = moviesSlice.actions
-export default moviesSlice.reducer
+export const { setPage, clearMovies } = useVoviesStore.actions
+export default useVoviesStore.reducer

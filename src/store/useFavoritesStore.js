@@ -9,7 +9,7 @@ const loadFromStorage = () => {
     }
 }
 
-const favoritesSlice = createSlice({
+const useFavoritesStore = createSlice({
     name: 'favorites',
     initialState: {
         list: loadFromStorage(),
@@ -29,5 +29,5 @@ const favoritesSlice = createSlice({
     },
 })
 
-export const { addFavorite, removeFavorite } = favoritesSlice.actions
-export default favoritesSlice.reducer
+export const { addFavorite, removeFavorite } = useFavoritesStore.actions
+export default useFavoritesStore.reducer

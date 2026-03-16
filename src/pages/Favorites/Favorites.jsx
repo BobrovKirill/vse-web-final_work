@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { Rating } from '@mui/material'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
-import { removeFavorite } from '../../store/favoritesSlice'
+import { removeFavorite } from '../../store/useFavoritesStore.js'
 import EmptyState from '../../components/EmptyState'
 import styles from './style.module.css'
 

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Pagination } from '@mui/material'
-import { fetchMovies, setPage } from '../../store/moviesSlice'
+import { fetchMovies, setPage } from '../../store/useVoviesStore.js'
 import MovieGrid from '../../components/MovieGrid'
 import ErrorMessage from '../../components/ErrorMessage'
 import styles from './style.module.css'
