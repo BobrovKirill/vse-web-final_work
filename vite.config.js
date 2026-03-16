@@ -16,7 +16,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://api.kinopoisk.dev/v1',
+        target: 'ttps://api.poiskkino.dev/v1',
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, '')
       }
