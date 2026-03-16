@@ -16,7 +16,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'ttps://api.poiskkino.dev/v1',
+        target: 'https://api.poiskkino.dev/v1',
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, '')
       }
